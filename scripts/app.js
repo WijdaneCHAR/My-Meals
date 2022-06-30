@@ -4,6 +4,7 @@ const search = document.getElementById('Search');
 const meal = document.getElementById('Meal');
 const results = document.getElementById('Results');
 
+
 //Search A Meal
 let urlSearch = '';
 const fetchSearch = async(url) => {
@@ -45,7 +46,7 @@ function myFunction(){
     meals.map(meal => para.innerText= meal.strInstructions);
     newDiv.appendChild(para);
     document.body.appendChild(newDiv);
-    let close = document.createElement("span");
+    let close = document.createElement("div");
             close.className = 'close';
             let closeText = document.createTextNode("X");
             close.appendChild(closeText);
